@@ -1,0 +1,80 @@
+\documentclass{beamer}
+
+\usetheme{Copenhagen}
+
+% Colours sampled from the university's logo
+\definecolor{nclblue}{HTML}{014880}
+\definecolor{nclred}{HTML}{e31b38}
+
+\setbeamercolor{title}{bg=nclblue, fg=white}
+\setbeamercolor{frametitle}{bg=nclblue, fg=white}
+
+\setbeamercolor{author}{fg=nclblue}
+\setbeamercolor{institute}{fg=nclblue}
+\setbeamercolor{date}{fg=nclblue}
+
+\setbeamercolor{author in head/foot}{bg=nclblue, fg=white}
+\setbeamercolor{place in head/foot}{bg=nclred, fg=white}
+\setbeamercolor{date in head/foot}{bg=nclblue, fg=white}
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline} % You can modify the widths of each box to fit your text lengths
+{
+    \hbox{%
+    \begin{beamercolorbox}[wd=.2\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+      \usebeamerfont{author in head/foot}\insertauthor
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.50\paperwidth,ht=2.25ex,dp=1ex,center]{place in head/foot}%
+      \usebeamerfont{title in head/foot} Newcastle University, \insertshortdate, Newcastle, UK
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.3\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+      \usebeamerfont{title in head/foot}\insertshorttitle\hspace*{2em}
+      \insertframenumber{} / \inserttotalframenumber\hspace*{2ex}
+    \end{beamercolorbox}}%
+    \vskip0pt%
+}
+\setbeamertemplate{headline}{}
+\setbeamertemplate{itemize item}{\color{nclred}\LARGE{$\bullet$}}
+\setbeamertemplate{itemize subitem}{\color{nclblue}\scriptsize{$\bullet$}}
+
+\usepackage{graphicx}
+\usepackage{fancybox}
+
+\title[NCL Uni Beamer Template]{Unofficial Newcastle University Beamer Template}
+
+\author[J. Doe]{John Doe}
+\institute[Newcastle Univ.] {Newcastle University \\ \medskip \textit{J.Doe@newcastle.ac.uk}}
+\date[April 2016]{April 24, 2016}
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+    \begin{center}
+        \includegraphics[scale=0.2]{ncluni-logo.png}
+        % Remove the following two lines if you don't want to use an event logo
+        \hspace{10pt}
+        \includegraphics[scale=0.4]{event-logo.png}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Important Quote}
+    \Huge{This is obviously very important}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Bullets}
+    \Large{
+    \begin{itemize}
+        \item Lorem ipsum dolor sit amet, consectetur adipiscing elit
+        \item sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+        \item Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        \item nisi ut aliquip ex ea commodo consequat
+        \item Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+        \item Excepteur sint occaecat cupidatat non proident
+    \end{itemize}
+    }
+\end{frame}
+
+\end{document}
